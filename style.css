@@ -53,14 +53,17 @@ h1{
 
 .feature-1{
     grid-area: feature-1;
-    background-image: url(img/photoshop.png);
+    background-image: url(img/logo\ unklab.png);
     background-size: cover;
     background-position: center;
 }
-
+.feature h3{
+    background-color: rgba(80, 81, 83, 0.8);
+    opacity: bacg;
+}
 .feature-2{
     grid-area: feature-2;
-    background-image: url(img/PremierePro.png);
+    background-image: url(img/logoFIK.jpeg);
     background-size: cover;
     background-position: center;
 }
@@ -110,7 +113,7 @@ h1{
     height: 18px;
     justify-content: space-between;
     position: relative;
-    z-index: 12;
+    z-index: 9999;
 }
 
 .menu-toggle input{
@@ -156,9 +159,6 @@ h1{
     opacity: 0;
     transform: scale(0);
 }
-
-
-
 
 
 /* services */
@@ -262,25 +262,114 @@ h1{
     margin-bottom: 20px;
 }
 
-
-
-
-/* gallery */
-.gallery{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 5px;
-}
-.gallery h2{
-    /* grid-column-start: 1;
-    grid-column-end: -1; */
-    grid-column: 1/-1;
+/* Extracurricular */
+.extrac{
     text-align: center;
-    margin-top: 30px;
+    margin-top: 50px;
     margin-bottom: 20px;
 }
+.extra{
+    background-color: #aaa;
+    margin-top: 20px;
+}
+.extra ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 5px;
+}
+.extra li{
+    display: block;
+    background-color: #ddd;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 1em;
+}
 
 
+/* Skills */
+#skillId h2{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+#skillId .bar {
+	height: 30px;
+	background-color: #fff;
+	border:1px solid #ddd;
+    margin: 5px 0 20px 0;
+    transition: .3s;
+}
+.bar .nilai {
+	height:30px;
+	background-color: #aaa;
+	display: inline-block;
+	color: #fff;
+	text-align: center;
+}
+.PS {
+	width:100%;
+}
+.PR {
+	width:90%;
+}
+.CN {
+	width:80%;
+}
+.JS {
+	width:60%;
+}
+.GD {
+	width:70%;
+}
+
+
+/* Portofolio */
+#portofolio h2{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.col-4 {
+	width:25%;
+	box-sizing: border-box;
+	padding:5px;
+	float: left;
+	text-align: center;
+    margin-bottom: 15px;
+}
+.col-4 img {
+    width:100%;
+}
+.col-4 a:hover img {
+	transform: scale(1.2);
+}
+
+
+/* contact and footer */
+#contactId h2{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+#contactId .countainer{
+    background-color: white;
+    text-align: center;
+}
+footer {
+	background-color: #aaa;
+	padding:50px;
+	text-align: center;
+}
+footer small {
+	color: #fff;
+}
+html {
+	scroll-behavior: smooth;
+}
 
 
 
